@@ -1,0 +1,139 @@
+---
+layout: default
+type: contact
+---
+
+	<section class="contact-form-area">
+		<div class="page-wrapper fluid">
+			<i class="contact-top"></i>
+			<h2>Feel free to contact us about pricing, project inquiries or any other questions you may have</h2>
+			<form action="mail.php" method="POST">
+				<input type="text" id="name" name="name" class="textbox fwidth" placeholder="Full Name">
+				<input type="text" id="email" name="email" class="textbox fwidth" placeholder="e.g my@email.com">
+				<textarea id="details" name="details" class="textbox fwidth textarea" placeholder="Type your message"></textarea>
+				<div>
+					<div id="form-loader"></div>
+					<input id="submit-button" type="submit" class="contact-form-submit" value="SEND" onclick="send_message('contact-form', $(this).closest('form')); return false;">
+				</div>
+			</form>
+		</div>
+	</section>
+	<section class="social-profiles">
+		<div class="page-wrapper fluid">
+			<a href="http://twitter.com/getveacon" class="social-profile-icon twt"></a>
+			<a href="http://facebook.com/getveacon" class="social-profile-icon fb"></a>
+			<a href="http://linkedin.com/company/veacon" class="social-profile-icon lin"></a>
+			<a href="https://angel.co/veacon" class="social-profile-icon angel"></a>
+			<a href="http://www.crunchbase.com/organization/veacon" class="social-profile-icon cb"></a>
+		</div>
+	</section>
+
+
+<script type="text/javascript">
+
+var alreadySent = false;
+var opts = {
+  lines: 13, // The number of lines to draw
+  length: 4, // The length of each line
+  width: 3, // The line thickness
+  radius: 12, // The radius of the inner circle
+  corners: 0.8, // Corner roundness (0..1)
+  rotate: 54, // The rotation offset
+  direction: 1, // 1: clockwise, -1: counterclockwise
+  color: '#fff', // #rgb or #rrggbb or array of colors
+  speed: 0.9, // Rounds per second
+  trail: 55, // Afterglow percentage
+  shadow: false, // Whether to render a shadow
+  hwaccel: false, // Whether to use hardware acceleration
+  className: 'spinner', // The CSS class to assign to the spinner
+  zIndex: 2e9, // The z-index (defaults to 2000000000)
+  top: '50%', // Top position relative to parent
+  left: '50%' // Left position relative to parent
+};
+var target = document.getElementById('form-loader');
+var spinner = new Spinner(opts).spin(target);
+
+function send_message(chan, jqForm) {
+
+		if(alreadySent)
+			return false;
+
+		var shouldReturn;
+
+		if($('#name').val() == ""){
+			$('#name').css("border","1px solid #E68080");
+			$('#name').focus(function() {$('#name').css("border","0px");});
+			shouldReturn = true;
+		}
+
+		if($('#company').val() == ""){
+			$('#company').css("border","1px solid #E68080");
+			$('#company').focus(function() {$('#company').css("border","0px");});
+			shouldReturn = true;		
+		}
+
+		if($('#details').val() == ""){
+			$('#details').css("border","1px solid #E68080");
+			$('#details').focus(function() {$('#details').css("border","0px");});
+			shouldReturn = true;		
+		}
+
+		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+ 		if(!emailReg.test($('#email').val()) || $('#email').val() == "") {
+ 			$('#email').css("border","1px solid #E68080");
+			$('#email').focus(function() {$('#email').css("border","0px");});
+    		shouldReturn = true;
+ 		} 
+
+			if(shouldReturn)
+				return false;
+
+			alreadySent = true;
+
+			$('#submit-button').animate({opacity:0},{duration:500,  complete : function() 
+				{
+        			$('#form-loader').css({"display":"block",opacity:1});
+        			$('#submit-button').css({"display":"none"});
+    			}
+			});
+			
+	$.ajax({
+		url: 'inc/formmail.php?purpose=' + chan,
+		method: 'POST',
+		data: new FormData(jqForm[0]), //jqForm.serialize(),
+		enctype: 'multipart/form-data',
+		success: function(data, status, xhr) {
+			if (data.status == 'ok') {
+				
+				$('#form-loader').animate({opacity:0},{duration:200,  complete : function() {
+        			$('.contact-form-area h2').html("Your inquiry request has been sent successfully. Thank you.");
+        			$('.contact-form-area h2').css({"color":"limegreen"});
+    			}
+
+			});				
+			} else {
+					$('#submit-button').stop();
+        			$('#form-loader').css({"display":"none",opacity:0});
+        			$('#submit-button').css({"display":"none",opacity:0});
+        			$('.contact-form-area h2').html("An error occured! Please try again.");
+        			$('.contact-form-area h2').css({"color":"lightcoral"});
+			}
+		},
+		dataType: 'json',
+		error: function(xhr, status) {
+
+					$('#submit-button').stop();
+        			$('#form-loader').css({"display":"none",opacity:0});
+        			$('#submit-button').css({"display":"none",opacity:0});
+        			$('.contact-form-area h2').html("An error occured! Please try again.");
+        			$('.contact-form-area h2').css({"color":"lightcoral"});
+
+		},
+		//Options to tell jQuery not to process data or worry about content-type.
+		cache: false,
+		contentType: false,
+		processData: false
+	});
+	return false;
+}
+</script>

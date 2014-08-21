@@ -1,0 +1,470 @@
+@media (max-width: 1185px){
+	.portal-help .page-wrapper{
+		width: 100%;
+	}
+	.portal-help-frame{
+		padding: 25px 10px 25px 10px;
+		display: inline-block;
+		vertical-align: middle;
+		float: none;
+		border: none;
+	}
+
+}
+@media (max-width: 1050px){
+	.container{
+		width: 900px;
+	}
+	.sdk-motto-block .page-wrapper{
+		width:900px;
+	}
+	.developer-portal .left-side {
+		width: 360px;
+		margin-top: 180px;
+		margin-left: 60px;
+	}
+	.supported-device .page-wrapper {
+		width: 900px;
+	}
+	.notify-area .left-side p {
+		width: 400px;
+		padding-left: 60px;
+	}
+	.notify-area .right-side{
+		margin-right: 60px;
+	}	
+	.portal-motto .text-wrapper .title {
+		width: 900px;
+	}
+	.portal-motto .text-wrapper .subtitle {
+		width: 900px;
+	}
+	.portal-veacon-screen {
+		height: 300px;
+	}
+	.portal-veacon-screen img{
+		height: 300px;
+	}
+	.portal-motto .text-wrapper h2 {
+		display: inline-block;
+
+	}
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+#veacon {
+	background: url("../img/veacon-ipad.png");
+}
+
+}
+
+@media (max-width: 1023px){
+
+	.sdk-motto-block .page-wrapper{
+		width:auto;
+	}
+	.developer-portal .left-side {
+		width: auto;
+	}
+	.supported-device .page-wrapper {
+		width: auto;
+	}
+	.notify-area .left-side p {
+		width: auto;
+	}
+	.portal-motto .text-wrapper .title {
+		width: auto;
+	}
+	.portal-motto .text-wrapper .subtitle {
+		width:auto;
+	}
+	.developer-portal .right-side{
+		margin-bottom: -10px !important;
+		overflow: hidden;
+	}
+	.homepage-promotion-block{
+		float: left;
+		width: 50%;
+	}
+	.homepage-promotion-block:nth-child(3) img{
+		margin-left: 2px;
+	}
+	.homepage-promotion-block:nth-child(5) img{
+		margin-left: 2px;
+	}
+	.homepage-promotion-block:nth-child(7) img{
+		margin-left: 2px;
+	}
+	.container, .page-wrapper, .fluid{
+		width: 95% !important;
+	}
+	.fluid{
+		text-align: center;
+	}
+    .sdk-dots{
+	    display: none;
+    }
+    .rcenter{
+	    display: inline-block;
+	    float: none !important;
+    }
+    #promotion{
+	    display: none;
+    }
+    .promotion-responsive{
+	    display: block;
+    }
+    #veacon-app{
+	    overflow: hidden;
+    }
+    .va-app{
+	    left: -170px;
+    }
+	.va-white{
+		top: 240px;
+		right: -100px;
+	}
+
+    #info .small-desc{
+	    margin-bottom: 40px;
+    }
+    .in-col{
+	    margin: 0;
+	    padding: 0 5% 0 5%;
+	    border-right: none !important;
+	    border-bottom: 1px solid #dcdcdc;
+    }
+    .in-desc{
+	    height: auto;
+	    margin-bottom: 20px;
+    }
+    .in-buttons{
+	    padding: 0 0 40px 0;
+    }
+	.notify-area .left-side p{
+		text-align: center;
+	}
+
+
+	.developer-portal .left-side {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.notify-area .left-side p {
+		padding-left: 0px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media (max-width: 885px) and (min-width: 780px){
+	#menu li{
+		margin: 0 10px;
+	}
+	.ft-about{
+		width: 350px;
+	}
+}
+@media (max-width: 856px){
+	.ft-menu{
+		display: none;
+	}
+	.social-profiles a{
+		margin: 0 3px;
+	}
+}
+@media (max-width: 779px){
+	#main{
+		padding: 71px 0 0 0;
+	}
+	header{
+		height: 70px;
+	}
+	.header-sticky{
+	height: 70px;
+	}
+	#menu, #portal-menu{
+		display: none;
+	}
+	.supported-device h2{
+	font-size: 18px;
+	}
+	#logo{
+		display: inline-block;
+		float: none;
+		background: url("../img/veacon-logo-mobile.png") no-repeat;
+		width: 121px;
+		height: 36px;
+		background-size: 121px 36px;
+	}
+	#logo:hover{
+		background: url("../img/veacon-logo-mobile.png") no-repeat;
+		background-size: 121px 36px !important;;
+	}
+    .mobile-menu-btn{
+	    display: block;
+    }
+    .social-menu a span {
+	padding: 0 0 0 0;
+	}
+	.social-menu ul {
+	padding: 0 !important;
+	}
+	.social-menu a {
+	font-size: 18px;
+	}
+
+    /* Home */
+	#motto{
+		padding: 45px 0 25px 0;
+	}
+	.small-desc{
+	font-size: 18px;
+	}
+	.main-motto{
+		font-size: 30px;
+	}
+	.promotion-text-block h2{
+		font-size: 30px;
+	}
+	.promotion-text-block p{
+		font-size: 16px;
+	}
+    #info{
+	    margin: 55px 0 0 0;
+	    border: 0px;
+    }
+    #veacon-app{
+	    height: 600px;
+    }
+	.va-app{
+		left: 50px;
+		top: 366px;
+		background-size: 449px 234px;
+		width: 449px;
+		height: 234px;
+	}
+	.va-white{
+		top: 250px;
+		right: 100px;
+		background-size: 317px 222px;
+		width: 317px;
+		height: 222px;
+	}
+	.va-txt span{
+	font-size: 26px;
+	}
+	#veacon-app{
+		padding: 50px 0 0 0;
+	}
+
+	/* SDK */
+    .sdk-motto-block{
+	    padding: 40px 0;
+    }
+    .sdk-motto-block h2{
+	font-size: 18px;
+	}
+	.veacon-progress{
+		margin: 45px auto 0;
+	}
+	.supported-device{
+		padding: 50px 0;
+	}
+	.supported-device h3{
+		margin: 60px 0 0 0;
+	}
+	.developer-portal{
+		padding: 65px 0 0 0;
+	}
+	.developer-portal .left-side{
+		margin-top: 40px;
+	}
+	.developer-portal .right-side{
+		margin-bottom: -10px !important;
+		overflow: hidden;
+	}
+
+	/* Portal */
+	.portal-motto{
+		padding: 40px 0 0 0;
+	}
+	.portal-motto .text-wrapper .title {
+		font-size:18px;
+	}
+	.portal-motto .text-wrapper .subtitle {
+		font-size:18px;
+	}
+    .dashboard-screen{
+	    width: 100%;
+    }
+	.portal-motto-links{
+		margin: 45px auto 0;
+	}
+	.portal-veacon-screen{
+		margin-top: 40px;
+		height: 300px;
+	}
+	.portal-veacon-screen img{
+		height: 300px;
+	}
+	.portal-help{
+		padding: 55px 0;
+	}
+	.portal-help h2{
+		margin: 0 0 25px 0;
+	}
+
+    .contact-form-area{
+	    padding: 40px 0;
+    }
+    .social-profiles{
+	    padding: 30px 30px;
+    }
+	.social-profiles h2{
+		margin-bottom: 35px;
+	}
+	.social-profile-icon{
+		width: 64px;
+		height: 58px;
+		background-size: 64px 58px !important;
+	}
+    .notify-area{
+	    padding: 60px 0 30px 0;
+    }
+	.notify-area .left-side{
+		margin-top: 30px;
+	}
+
+	.ft-about{
+		width: 280px;
+	}
+	.powered span{
+		display: none;
+	}
+	.ft-about .ibeacon-logo{
+		margin: 0 10px 0 0;
+		padding: 0 10px 0 0;
+		border: none;
+	}
+	.scenter{
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+	}
+}
+
+@media (max-width: 766px){
+		.ft-about{
+		border-bottom: 1px solid #dcdcdc;
+	}
+}
+
+@media (max-width: 500px){
+	.homepage-promotion-block:nth-child(3) img{
+		margin-left: 0px;
+	}
+	.homepage-promotion-block:nth-child(5) img{
+		margin-left: 0px;
+	}
+	.homepage-promotion-block:nth-child(7) img{
+		margin-left: 0px;
+	}
+
+	.homepage-promotion-block{
+		float: none;
+		width: 100%;
+	}
+
+	#veacon-app{
+		height: 700px;
+	}
+	.va-app{
+		left: -50px;
+		top: 466px;
+		background-size: 449px 234px;
+		width: 449px;
+		height: 234px;
+	}
+	.va-white{
+		top: 350px;
+		right: -10px;
+		background-size: 317px 222px;
+		width: 317px;
+		height: 222px;
+	}
+
+	.supported-device-mobile{
+		display: block;
+	}
+	.supported-device-block i{
+		display: none !important;
+	}
+
+	.sdk-dots.xs{
+		background: url("../img/vertical-dots.png") top center no-repeat;
+		width: 100%;
+		height: 91px;
+		display: inline-block;
+		margin: 15px 0;
+	}
+    .xscenter{
+	    width: 100% !important;
+	    display: inline-block;
+	    float: none !important;
+	    background-position: center !important;
+	    margin: 0 !important;
+    }
+	.veacon-progress .your-app{
+	    margin: 0 !important;
+    }
+    .rcenter{
+	    margin: 30px 0 !important;
+    }
+    .fluid p{
+	    text-align: center !important;
+    }
+    .notify-area .right-side{
+	    width: 100%;
+    }
+	.subscription-textbox{
+		width: 100%;
+	}
+	.subscription-submit{
+		margin-top: 15px;
+	}
+	.portal-help{
+		padding: 55px 0 0 0;
+	}
+	.portal-help-frame p{
+		min-height: 0;
+	}
+    .portal-help-frame{
+	    width: 100%;
+	    box-sizing: border-box;
+	    border-bottom: 1px solid #dcdcdc !important;
+    }
+    .portal-help-frame.last{
+	    border-bottom: none !important;
+    }
+
+    footer{
+	    padding: 20px 0 100px 0;
+    }
+    .textbox.hwidth{
+	    width: 100% !important;
+    }
+}
+
+/* IE FIX */
+@media screen and (min-width:0\0) {  
+#menu{
+	float: left;
+	margin-left: 100px;
+	list-style: none;
+	display: inline-block;
+}
+}
