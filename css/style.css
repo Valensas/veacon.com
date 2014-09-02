@@ -1221,3 +1221,176 @@ footer{
 	right: 0;
 	margin-top: 12px;
 }
+
+/*BLOG STYLES*/
+
+.blog-content{
+	width: 800px;
+	height: auto;
+	margin: 50px 0;
+	display: inline-block;
+}
+.blog-post{
+	width: 100%;
+	text-align: left;
+	float: left;
+	margin: 40px 0;
+	overflow: hidden;
+}
+.post-title{
+	float: left;
+}
+.post-title a{
+	color: #5351ac;
+	font-size: 40px;
+	font-weight: 500;
+	width: 100%;
+	-webkit-transition: 0.1s ease-in-out;
+	-moz-transition: 0.1s ease-in-out;
+	-ms-transition: 0.1s ease-in-out;
+	-o-transition: 0.1s ease-in-out;
+	transition: 0.1s ease-in-out;
+}
+.post-title a:hover{
+	color: #333173;
+}
+.post-date{
+	float: left;
+	color: #ccc;
+	font-size: 18px;
+	width:100%;
+}
+.post-txt{
+	float: left;
+	color: #787878;
+	font-size: 18px;
+	margin-top: 30px;
+}
+.post-txt img{
+	width: 100%;
+	float: left;
+	margin: 20px 0;
+}
+
+
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),  
+        only screen and (   min--moz-device-pixel-ratio: 1.5),  
+        only screen and (     -o-min-device-pixel-ratio: 3/2),  
+        only screen and (        min-device-pixel-ratio: 1.5),  
+        only screen and (min-resolution: 192dpi) {  
+   
+.ibeacon-logo{
+	background:url("../img/ibeacon-logo@2x.png") no-repeat;
+	background-size: 71px 93px;
+}
+
+ #logo{
+	background:url("../img/veacon-logo@2x.png");
+	background-size: 180px 56px;
+}    
+#logo:hover{
+	background:url("../img/veacon-logo-hover@2x.png");
+	background-size: 180px 56px;
+}
+.veacon-portal{
+	background: url('../img/veacon-portal@2x.png') no-repeat;
+	background-size: 165px 186px;
+}
+.sdk-dots{
+	background: url('../img/sdk-dots@2x.png');
+	background-size: 161px 11px;
+}
+.your-app{
+	background: url('../img/your-app@2x.png') no-repeat;
+	background-size: 102px 213px;
+}
+.veacon-transmitter{
+	background: url('../img/veacon-transmitter@2x.png') no-repeat;
+	background-size: 168px 197px;
+}
+.scenarios-icon{
+	background: url("../img/scenarios-icon@2x.png") no-repeat;
+	background-size: 111px 111px;
+}
+.sensor-icon{
+	background: url("../img/sensor-icon@2x.png") no-repeat;
+	background-size: 125px 95px;
+}
+.analyze-icon{
+	background: url("../img/analyze-icon@2x.png") no-repeat;
+	background-size: 95px 105px;
+}
+.account-icon{
+	background: url("../img/account-icon@2x.png") no-repeat;
+	background-size: 97px 109px;
+}
+.device-icon{
+	background: url("../img/device-icon@2x.png") no-repeat;
+	background-size: 147px 106px;
+}
+.contact-top{
+	background: url("../img/contact-top@2x.png") no-repeat;
+	background-size: 167px 183px;
+}
+.social-profile-icon{
+	background-size: 128px 117px;
+}
+.social-profile-icon.twt{
+	background: url("../img/twitter-profile-icon@2x.png") no-repeat;
+	background-size: 128px 117px;
+}
+.social-profile-icon.fb{
+	background: url("../img/fb-profile-icon@2x.png") no-repeat;
+	background-size: 128px 117px;
+}
+.social-profile-icon.lin{
+	background: url("../img/lin-profile-icon@2x.png") no-repeat;
+	background-size: 128px 117px;
+}
+.social-profile-icon.angel{
+	background: url("../img/angel-profile-icon@2x.png") no-repeat;
+	background-size: 128px 117px;
+}
+.social-profile-icon.cb{
+	background: url("../img/cb-profile-icon@2x.png") no-repeat;
+	background-size: 128px 117px;
+}
+.social-profile-icon.twt:hover{
+	background: url("../img/twitter-profile-icon-hover@2x.png") no-repeat;
+	background-size: 128px 117px;
+}
+.social-profile-icon.fb:hover{
+	background: url("../img/fb-profile-icon-hover@2x.png") no-repeat;
+	background-size: 128px 117px;
+}
+.social-profile-icon.lin:hover{
+	background: url("../img/lin-profile-icon-hover@2x.png") no-repeat;
+	background-size: 128px 117px;
+}
+.social-profile-icon.angel:hover{
+	background: url("../img/angel-profile-icon-hover@2x.png") no-repeat;
+	background-size: 128px 117px;
+}
+.social-profile-icon.cb:hover{
+	background: url("../img/cb-profile-icon-hover@2x.png") no-repeat;
+	background-size: 128px 117px;
+}
+.app-store{
+	background: url("../img/app-store-badge@2x.png");
+	background-size: 240px 72px;
+}
+.supported-device-block .iphone{
+	background: url("../img/iphone4s@2x.png") no-repeat;
+	background-size: 149px 106px;
+}
+.supported-device-block .ipad{
+	background: url("../img/ipad3@2x.png") no-repeat;
+	background-size: 99px 182px;
+}
+.supported-device-block .android{
+	background: url("../img/android4@2x.png") no-repeat;
+	background-size: 153px 120px;
+}
+
+} 
+

@@ -1,3 +1,12 @@
+@media (max-width: 1377px){
+
+.portal-veacon-screen {
+		height: 320px;
+	}
+	.portal-veacon-screen img{
+		height: 320px;
+	}
+}
 @media (max-width: 1185px){
 	.portal-help .page-wrapper{
 		width: 100%;
@@ -49,6 +58,13 @@
 		display: inline-block;
 
 	}
+	.sdk-dots{
+	    display: none;
+    }
+    .rcenter{
+	    display: inline-block;
+	    float: none !important;
+    }
 }
 @media only screen 
 and (min-device-width : 768px) 
@@ -159,8 +175,15 @@ and (orientation : landscape) {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.blog-content{
+	width: 90%;
+	height: auto;
+	margin: 50px 0;
+	display: inline-block;
+}
 }
 @media (max-width: 885px) and (min-width: 780px){
+
 	#menu li{
 		margin: 0 10px;
 	}
@@ -300,6 +323,7 @@ and (orientation : landscape) {
 	}
     .dashboard-screen{
 	    width: 100%;
+	    height: auto;
     }
 	.portal-motto-links{
 		margin: 45px auto 0;
@@ -405,9 +429,10 @@ and (orientation : landscape) {
 	}
 
 	.sdk-dots.xs{
-		background: url("../img/vertical-dots.png") top center no-repeat;
+		background: url("../img/vertical-dots@2x.png") top center no-repeat;
 		width: 100%;
 		height: 91px;
+		background-size: 11px 91px;
 		display: inline-block;
 		margin: 15px 0;
 	}
@@ -468,3 +493,5 @@ and (orientation : landscape) {
 	display: inline-block;
 }
 }
+
+

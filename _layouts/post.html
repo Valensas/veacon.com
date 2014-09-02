@@ -1,12 +1,30 @@
 ---
 layout: default
+type: blog
 notify: hidden
 background: white
 footerBorder: true
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<section class="blog-content">
+	<div class="blog-post">
+		<div class="post-title">
+			<a>{{ page.title }}</a>
+		</div>
+		<div class="post-date">{{ page.date | date_to_string }}</div>
+		<div class="post-txt">
+			{% if page.coverImage %}
+			<img src="{{ page.coverImage }}">
+			{% endif %}	
+			{{ content }}
+		</div>
+	</div>
+</section>
 
-<div class="post">
-{{ content }}
+<div>
+<div class="fb-share-button" data-type="button" data-href="{{page.url}}" style="vertical-align:top;zoom:1;*display:inline"></div>
+
+<div style="padding-top: 3px;">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="{{page.title}}" data-via="getveacon" data-count="none" data-hashtags="iBeacon">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
 </div>

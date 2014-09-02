@@ -7,13 +7,13 @@ type: contact
 		<div class="page-wrapper fluid">
 			<i class="contact-top"></i>
 			<h2>Feel free to contact us about pricing, project inquiries or any other questions you may have</h2>
-			<form action="mail.php" method="POST">
+			<form id="contact_form" action="#" method="POST">
 				<input type="text" id="name" name="name" class="textbox fwidth" placeholder="Full Name">
 				<input type="text" id="email" name="email" class="textbox fwidth" placeholder="e.g my@email.com">
 				<textarea id="details" name="details" class="textbox fwidth textarea" placeholder="Type your message"></textarea>
 				<div>
 					<div id="form-loader"></div>
-					<input id="submit-button" type="submit" class="contact-form-submit" value="SEND" onclick="send_message('contact-form', $(this).closest('form')); return false;">
+					<input id="submit-button" type="submit" class="contact-form-submit" value="SEND">
 				</div>
 			</form>
 		</div>
@@ -28,9 +28,9 @@ type: contact
 		</div>
 	</section>
 
+    <script type="text/javascript" src="https://jquery-jsonp.googlecode.com/files/jquery.jsonp-2.2.0.min.js"></script>
 
 <script type="text/javascript">
-
 var alreadySent = false;
 var opts = {
   lines: 13, // The number of lines to draw
@@ -53,9 +53,10 @@ var opts = {
 var target = document.getElementById('form-loader');
 var spinner = new Spinner(opts).spin(target);
 
-function send_message(chan, jqForm) {
-
-		if(alreadySent)
+    $('#contact_form').submit(function(evt) {
+        evt.preventDefault();  // Don't do default action
+        
+        if(alreadySent)
 			return false;
 
 		var shouldReturn;
@@ -96,44 +97,48 @@ function send_message(chan, jqForm) {
         			$('#submit-button').css({"display":"none"});
     			}
 			});
-			
-	$.ajax({
-		url: 'inc/formmail.php?purpose=' + chan,
-		method: 'POST',
-		data: new FormData(jqForm[0]), //jqForm.serialize(),
-		enctype: 'multipart/form-data',
-		success: function(data, status, xhr) {
-			if (data.status == 'ok') {
-				
-				$('#form-loader').animate({opacity:0},{duration:200,  complete : function() {
-        			$('.contact-form-area h2').html("Your inquiry request has been sent successfully. Thank you.");
-        			$('.contact-form-area h2').css({"color":"limegreen"});
-    			}
-
-			});				
-			} else {
-					$('#submit-button').stop();
-        			$('#form-loader').css({"display":"none",opacity:0});
-        			$('#submit-button').css({"display":"none",opacity:0});
-        			$('.contact-form-area h2').html("An error occured! Please try again.");
-        			$('.contact-form-area h2').css({"color":"lightcoral"});
-			}
-		},
-		dataType: 'json',
-		error: function(xhr, status) {
-
-					$('#submit-button').stop();
-        			$('#form-loader').css({"display":"none",opacity:0});
-        			$('#submit-button').css({"display":"none",opacity:0});
-        			$('.contact-form-area h2').html("An error occured! Please try again.");
-        			$('.contact-form-area h2').css({"color":"lightcoral"});
-
-		},
-		//Options to tell jQuery not to process data or worry about content-type.
-		cache: false,
-		contentType: false,
-		processData: false
+ 
+        // Replace this with your subdomain!
+        var uvSubdomain = "veacon";
+        
+        // Create an API client (non-trusted) within the UserVoice settings/channels section.  Paste the key only here.
+        var uvKey = "fnIDufrcCuuEgvuEx1iA";
+        
+        // Grab the data we need to send
+        var message = $('#details').val();
+        var subject = "Contact Us";
+        var name = $('#name').val();
+        var email = $('#email').val();
+ 
+ 	$.jsonp({
+		url: 'https://' + uvSubdomain + '.uservoice.com/api/v1/tickets/create_via_jsonp.json?callback=?',
+		data: {
+                client: uvKey,
+                ticket: {
+                    message: message,
+                    subject: subject
+                },
+                name: name,
+                email: email
+        },
+		success: function(data) {
+			$('#form-loader').animate({opacity:0},{duration:200,  complete : function() {
+				$('.contact-form-area h2').html("Your inquiry request has been sent successfully. Thank you.");
+				$('.contact-form-area h2').css({"color":"limegreen"});
+			}});
+        },
+        error: function(d, msg) {
+			$('#submit-button').stop();
+			$('#form-loader').css({"display":"none",opacity:0});
+			$('#submit-button').css({"display":"none",opacity:0});
+			$('.contact-form-area h2').html("An error occured! Please try again.");
+			$('.contact-form-area h2').css({"color":"lightcoral"});
+        }
 	});
-	return false;
-}
+
+ 
+     
+        
+        return false;
+    });
 </script>
