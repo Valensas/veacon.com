@@ -8,5 +8,6 @@
 		<img src="{{ post.coverImage }}">
 		{% endif %}	
 		{{ post.content | strip_html | truncatewords: 100 }}
+		<br/><br/><a href="{{ post.url }}">Read more</a>
 	</div>
 </div>
