@@ -4,7 +4,7 @@ body{
 	background:#fbfbfb;
   	font-family: "omnes-pro",Helvetica,Arial;
   	text-align: center;
-	word-spacing: 3px;
+	word-spacing: 3.0px;
 }
 #main{
 	padding: 150px 0 0 0;
@@ -1265,13 +1265,18 @@ footer{
 	color: #787878;
 	font-size: 18px;
 	margin-top: 30px;
+    text-align: justify;
+    text-justify: inter-word;	    
+	word-spacing: 0px;
 }
 .post-txt img{
 	width: 100%;
 	float: left;
 	margin: 20px 0;
 }
-
+.post-txt a{
+	color: #5351AC;
+}
 
 @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),  
         only screen and (   min--moz-device-pixel-ratio: 1.5),  

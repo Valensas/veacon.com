@@ -18,13 +18,14 @@ footerBorder: true
 			{{ content }}
 		</div>
 	</div>
+	
+	<div style="text-align: left;">
+		<div class="fb-share-button" data-type="button" data-href="{{page.url}}" style="vertical-align:top;zoom:1;*display:inline; float:left;"></div>
+	
+		<div style="padding-top: 3px; float: left; padding-left: 15px;">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-text="{{page.title}}" data-via="getveacon" data-count="none" data-hashtags="iBeacon">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		</div>
+	</div>
 </section>
 
-<div>
-<div class="fb-share-button" data-type="button" data-href="{{page.url}}" style="vertical-align:top;zoom:1;*display:inline"></div>
-
-<div style="padding-top: 3px;">
-<a href="https://twitter.com/share" class="twitter-share-button" data-text="{{page.title}}" data-via="getveacon" data-count="none" data-hashtags="iBeacon">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-</div>
-</div>
