@@ -8,8 +8,8 @@ Today we are proud to announce Veacon, a proximity solution which allows mobile 
 
 Technically speaking, Veacon is based on the Apple iBeacon micro-location protocol which uses Bluetooth Low Energy to communicate with nearby devices through the help of a Beacon (sensor). Veacon consists of several elements; a physical sensor, a management portal, SDK for developers and a demo app for testing purposes. Users can signup and start playing around with iBeacon for free using the Veacon Portal and [Veacon iOS App](http://appstore.com/veacon){:target="_blank"}.
 
-Stay tuned for projects and case studies developed by our team. Sensors will be available for sale on our website, register to our newsletter and stay updated on news, pricing and availability. If you're an iOS developer don't forget to [download the Veacon SDK](https://github.com/Valensas/VeaconSDK){:target="_blank"}. 
+Stay tuned for projects and case studies developed by our team. Sensors will be available for sale on our website, register to our newsletter and stay updated on news, pricing and availability. If you're an iOS developer don't forget to download the [Veacon SDK](https://github.com/Valensas/VeaconSDK){:target="_blank"}. 
 
-We had fun developing the platform, hope you will too [signup now and get started](http://portal.veacon.com){:target="_blank"}
+We had fun developing the platform, hope you will too signup now and [get started!](http://portal.veacon.com){:target="_blank"}
 
 Follow us: [Twitter](http://twitter.com/getveacon){:target="_blank"}, [Linkedin](http://linkedin.com/company/veacon){:target="_blank"}, [Facebook](http://www.facebook.com/getveacon){:target="_blank"}
