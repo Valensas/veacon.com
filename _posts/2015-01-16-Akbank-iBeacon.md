@@ -10,7 +10,7 @@ World's best just got better with Veacon integration. Akbank Direkt users are no
 
 Let's see how that turns out and we'll keep you posted with more great news.
 
-(https://cloud.githubusercontent.com/assets/5398113/5782174/b6311072-9dc1-11e4-957f-945529560164.png)
+
 
 Useful Links:
 
