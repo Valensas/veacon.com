@@ -10,6 +10,6 @@ World's best just got better with Veacon integration. Akbank Direkt users are no
 
 Let's see how that turns out and we'll keep you posted with more great news.
 
-[Akbank Direkt App](http://appstore.com/akbankdirekt){:target="_blank"}
+[Akbank Direkt App](http://appstore.com/akbankdirekt){:target="_blank"}, [Press Release](http://press.valensas.com/94086-need-cash-there-s-an-app-for-that){:target="_blank"}, [GSMA '14](http://www.gsma.com/newsroom/press-release/gsma-winners-2014-global-mobile-awards/){:target="_blank"}
 
-[Press Release](http://press.valensas.com/94086-need-cash-there-s-an-app-for-that){:target="_blank"}
+
