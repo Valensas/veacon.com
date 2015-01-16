@@ -12,9 +12,6 @@ Let's see how that turns out and we'll keep you posted with more great news.
 
 ![image](https://raw.githubusercontent.com/Valensas/veacon.com/gh-pages/blog_images/akbank_ATM.png)
 
-[[ https://raw.githubusercontent.com/Valensas/veacon.com/gh-pages/blog_images/akbank_ATM.png | height = 100px ]]
-
-
 Useful Links:
 
 [Akbank Direkt App](http://appstore.com/akbankdirekt){:target="_blank"}
