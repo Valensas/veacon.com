@@ -2,7 +2,7 @@
 layout: post
 title: What is Veacon?
 ---
-A day doesn't go by where mobile doesn't disrupt the way we do things. Tiny computers with high connectivity make almost everything accessible, everywhere! Completing a money transaction while hiking on a mountain trail seemed like a Star Trek episode 10 year ago but today it's the new norm. Mobile changed the way we do business, communicate, socialize, have fun or basically how we live. 
+A day doesn't go by where mobile doesn't disrupt the way we do things. Tiny computers with high connectivity make almost everything accessible, everywhere! Completing a money transaction while hiking on a mountain trail seemed like a Star Trek episode ten years ago, today it's the new norm. Mobile changed the way we do business, communicate, socialize, have fun or basically the way we live.
 
 Today we are proud to announce Veacon, a proximity solution which allows mobile developers create location dependant mobile experiences for existing apps. Basically speaking, we'll be seeing new applications that act differently in different locations and continue to change the way we do things. Think about receiving a personlized coupon in your favourite store or withdrawing money from an ATM using just your phone. 
 
