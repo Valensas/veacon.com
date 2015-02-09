@@ -5,7 +5,10 @@ title: Recap & Presentations
 Thank you all who've joined us at the Bluetooth Smart and iBeacon Meetup last week. The event was a huge success with your attendance, support and mind opening questions. We've already received great feedback and suggestions for our next meetup. Please follow us for updates. Also do find below both presentations as promised. Feel free to download and reuse them (non-commerical only please).
 
 Thanks again everyone and we hope to see you again soon,
+
 Team Veacon
+
+PRESENTATIONS
 
 **What is Bluetooth Smart?**
 
