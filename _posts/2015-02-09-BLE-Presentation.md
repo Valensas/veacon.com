@@ -2,7 +2,7 @@
 layout: post
 title: Recap & Presentations
 ---
-Thank you all who've joined us at the Bluetooth Smart and iBeacon Meetup last week. Attendance was sensational! With over 100 participants, double the number we initially expected for our first meetup, the event was a huge success. Thank you for your support and mind opening questions. Your highly motivated presence inspired us into building better products. We will continue to inform you about updates and enhancements.
+Thank you all who’ve joined us at the Bluetooth Smart and iBeacon Meetup last week. Attendance was sensational! With over 100 participants, double the number we initially expected for our first meet up, the event was a huge success. Thank you for your support and mind-opening questions. Your highly motivated presence inspired us into building better products. We will continue to inform you about updates and enhancements.
 
 Also, please find below both presentations as promised and feel free to download and reuse them (non-commercial please).
 
