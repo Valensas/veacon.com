@@ -71,19 +71,7 @@ $( document ).ready(function()
 
 	$('.mobile-menu-btn').click(function(){
 		$('.mobile-menu').slideToggle();
-	});
-
-	    $('#subscribe').submit(function() {
-        $('.notify-area .left-side p').html('<br>Adding email address...');
-            $.ajax({
-               url: 'inc/store-address.php',
-               data: 'ajax=true&email=' + escape($('#email').val()),
-               success: function(msg) {
-               $('.notify-area .left-side p').html('<br>' + msg);
-               }
-            });
-            return false;
-    });
+	});	    
 
 });
 
